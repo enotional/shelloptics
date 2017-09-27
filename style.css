@@ -1,16 +1,18 @@
 html {
-    font-family: Helvetica, sans-serif;
-    font-size: 18px;
-    background-color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: white;
 }
-
+.menu {
+  padding-top: 1rem;
+}
 header {
-    background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png) no-repeat center center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 1rem;
-    height: 30rem;
+  background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png) no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 1rem;
+  height: 30rem;
   }
 header .flex {
   justify-content: flex-end;
@@ -19,38 +21,39 @@ flex {
   display: flex;
 }
 div {
-      display: block;
+  display: block;
   }
 
+
 ul li {
-    display: inline;
-    padding: 0 1rem;
+  display: inline;
+  padding: 0rem 1rem;
+  padding-top: 2rem;
 }
 
 h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: .67em 0;
-
+  font-size: 2rem;
+  font-weight: bold;
+  margin: .67em 0;
 }
 .service img.paper-icon {
     width: 3.5rem;
 }
 .service img {
-    width: 5rem;
-    margin-bottom: 1rem;
+  width: 5rem;
+  margin-bottom: 1rem;
 }
 body {
-    line-height: 1.4rem;
+  line-height: 1.4rem;
 }
 
 .main-banner {
-      background-color: white;
-      padding: 0.75rem 5rem;
-      display: inline-block;
-      margin-top: 10rem;
-      margin-right: -2rem;
-      line-height: 2.4rem;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  line-height: 2.4rem;
   }
 
 .container {
@@ -71,7 +74,9 @@ nav img {
     margin-left: 2rem;
     margin-right: 1rem;
 }
-
+nav div {
+  align-items: center;
+}
 img {
     border-style: none;
 }
@@ -99,14 +104,15 @@ footer {
 }
 
 .title {
-    background-color: cadetblue;
-    padding: 0.5rem 1.25rem;
-    font-weight: bold;
-    color: white;
-    max-width: 10rem;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  color: white;
+  max-width: 10rem;
+  font-size: 1rem;
 }
 .info p {
-    padding: 1rem 0;
+  padding: 1rem 0;
 
 }
 div .info {
@@ -125,28 +131,18 @@ margin-right: 5%;
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .main-banner {
-        background-color: white;
-        padding: 0.75rem 5rem;
-        display: inline-block;
-        margin-top: 5rem;
-        margin-right: -2rem;
-        line-height: 2.4rem;
-        font-size: 1.33rem
-    }
+header {padding-top: 0px; height: 22rem;height: 22rem;}
+nav.container {}
+nav {position: fixed;margin: 0;width: 100%;margin-top: 5rem;}
+.main-banner {padding: 0.75rem 4rem;margin-right: 2rem;}
+.container { max-width: 100%;margin:auto;}
 }
 
 /* Mobile */
-@media only screen
-  and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
-  .main-banner {
-          background-color: white;
-          padding: 0.75rem 5rem;
-          display: inline-block;
-          margin-top: 5rem;
-          margin-right: -2rem;
-          line-height: 2.4rem;
-          font-size: 1.33rem
-      }
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  header {padding-top: 0px; height: 17rem;background-repeat: no-repeat;background-position: center center;}
+  nav {position: fixed;margin: 1;width: 100%;margin-top: 9rem;}
+  .container { max-width: 100%;margin:auto;}
+  .main-banner {padding: 1rem;       }
+  .title {font-size: 1rem;}
   }
